@@ -1,0 +1,13 @@
+#/bin/bash
+
+docker build -f ./Dockerfile -t myimage:latest .
+if ! [ -d ~/testrun ]; then 
+  if  [ -f ~/testrun ]; then 
+     echo 'ERROR! testrun is a file'
+     exit
+  else
+     mkdir ~/testrun
+  fi
+fi
+
+docker run -itv ~/testrun:/data --env REPOURL='https://github.com/rodskiy/itea-1' myimage
