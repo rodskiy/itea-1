@@ -1,6 +1,0 @@
-ssh-keygen -t rsa -b 4096 -C "rodskiy@ukr.net"
-sudo apt-get install xclip
-xclip -sel clip < ~/.ssh/id_rsa.pub
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-Past public key to Github
