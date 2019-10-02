@@ -1,0 +1,11 @@
+FROM nginx
+
+MAINTAINER Pavel Rodskiy <rodskiy@ukr.net>
+
+#RUN rm  /usr/share/nginx/html/index.htm
+
+RUN cd /
+
+ADD /home/pavel/itea-1/index_nginx/index.htm /usr/share/nginx/html/index.htm
+
+
