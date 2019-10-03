@@ -1,0 +1,19 @@
+
+1) Generate key pair
+   ssh-keygen -t rsa -b 4096 -C "email@domain"
+
+2) Add public key to Github account
+   By default public key is hosted in  ~/.ssh/id_rsa.pub. Copy it with vim or xclip
+   xclip -sel clip ~/.ssh/id_rsa.pub
+   And then put it on github.
+
+3) Add to ~/.ssh/config 
+    
+  Host github.com
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa
+  
+4) Copy repository with git clone 4) Copy repository with git clone 4) Copy repository with git clone 4) Copy repository with git clone 
+
+
