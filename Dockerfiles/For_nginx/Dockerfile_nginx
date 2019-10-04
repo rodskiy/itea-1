@@ -1,0 +1,20 @@
+FROM nginx
+
+MAINTAINER Pavel Rodskiy <rodskiy@ukr.net>
+
+#RUN rm  /usr/share/nginx/html/index.htm
+
+RUN cd /
+
+ADD /home/pavel/itea-1/index_nginx/index.htm /usr/share/nginx/html/index.htm
+
+#CMD /bin/bash entrypoint.sh
+
+COPY entrypoint.sh
+
+ENTRYPOINT ['/bin/bash', 'entrypoint.sh']
+#если файл исполняемый то можно так ENTRYPOINT ['myscript.sh']
+#дать доступ к 80-му порту
+#EXPOSE 80
+
+
