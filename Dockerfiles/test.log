@@ -1,26 +1,0 @@
-Sending build context to Docker daemon  3.584kB
-Step 1/6 : FROM alpine
- ---> 961769676411
-Step 2/6 : MAINTAINER Pavel Rodskiy <rodskiy@ukr.net>
- ---> Using cache
- ---> 909907cfc2bd
-Step 3/6 : ARG reponame
- ---> Using cache
- ---> 5e112c114c14
-Step 4/6 : RUN apk update
- ---> Using cache
- ---> e22aae38a2c2
-Step 5/6 : RUN apk add git
- ---> Using cache
- ---> e41cbe058c26
-Step 6/6 : CMD cd /data ; git clone "$REPOURL"
- ---> Using cache
- ---> fa72d5653a01
-Successfully built fa72d5653a01
-Successfully tagged myimage:latest
-Cloning into 'itea-1'...
-remote: Enumerating objects: 33, done.[K
-remote: Counting objects:   3% (1/33)[Kremote: Counting objects:   6% (2/33)[Kremote: Counting objects:   9% (3/33)[Kremote: Counting objects:  12% (4/33)[Kremote: Counting objects:  15% (5/33)[Kremote: Counting objects:  18% (6/33)[Kremote: Counting objects:  21% (7/33)[Kremote: Counting objects:  24% (8/33)[Kremote: Counting objects:  27% (9/33)[Kremote: Counting objects:  30% (10/33)[Kremote: Counting objects:  33% (11/33)[Kremote: Counting objects:  36% (12/33)[Kremote: Counting objects:  39% (13/33)[Kremote: Counting objects:  42% (14/33)[Kremote: Counting objects:  45% (15/33)[Kremote: Counting objects:  48% (16/33)[Kremote: Counting objects:  51% (17/33)[Kremote: Counting objects:  54% (18/33)[Kremote: Counting objects:  57% (19/33)[Kremote: Counting objects:  60% (20/33)[Kremote: Counting objects:  63% (21/33)[Kremote: Counting objects:  66% (22/33)[Kremote: Counting objects:  69% (23/33)[Kremote: Counting objects:  72% (24/33)[Kremote: Counting objects:  75% (25/33)[Kremote: Counting objects:  78% (26/33)[Kremote: Counting objects:  81% (27/33)[Kremote: Counting objects:  84% (28/33)[Kremote: Counting objects:  87% (29/33)[Kremote: Counting objects:  90% (30/33)[Kremote: Counting objects:  93% (31/33)[Kremote: Counting objects:  96% (32/33)[Kremote: Counting objects: 100% (33/33)[Kremote: Counting objects: 100% (33/33), done.[K
-remote: Compressing objects:   5% (1/20)[Kremote: Compressing objects:  10% (2/20)[Kremote: Compressing objects:  15% (3/20)[Kremote: Compressing objects:  20% (4/20)[Kremote: Compressing objects:  25% (5/20)[Kremote: Compressing objects:  30% (6/20)[Kremote: Compressing objects:  35% (7/20)[Kremote: Compressing objects:  40% (8/20)[Kremote: Compressing objects:  45% (9/20)[Kremote: Compressing objects:  50% (10/20)[Kremote: Compressing objects:  55% (11/20)[Kremote: Compressing objects:  60% (12/20)[Kremote: Compressing objects:  65% (13/20)[Kremote: Compressing objects:  70% (14/20)[Kremote: Compressing objects:  75% (15/20)[Kremote: Compressing objects:  80% (16/20)[Kremote: Compressing objects:  85% (17/20)[Kremote: Compressing objects:  90% (18/20)[Kremote: Compressing objects:  95% (19/20)[Kremote: Compressing objects: 100% (20/20)[Kremote: Compressing objects: 100% (20/20), done.[K
-remote: Total 33 (delta 10), reused 24 (delta 5), pack-reused 0[K
-Unpacking objects:   3% (1/33)Unpacking objects:   6% (2/33)Unpacking objects:   9% (3/33)Unpacking objects:  12% (4/33)Unpacking objects:  15% (5/33)Unpacking objects:  18% (6/33)Unpacking objects:  21% (7/33)Unpacking objects:  24% (8/33)Unpacking objects:  27% (9/33)Unpacking objects:  30% (10/33)Unpacking objects:  33% (11/33)Unpacking objects:  36% (12/33)Unpacking objects:  39% (13/33)Unpacking objects:  42% (14/33)Unpacking objects:  45% (15/33)Unpacking objects:  48% (16/33)Unpacking objects:  51% (17/33)Unpacking objects:  54% (18/33)Unpacking objects:  57% (19/33)Unpacking objects:  60% (20/33)Unpacking objects:  63% (21/33)Unpacking objects:  66% (22/33)Unpacking objects:  69% (23/33)Unpacking objects:  72% (24/33)Unpacking objects:  75% (25/33)Unpacking objects:  78% (26/33)Unpacking objects:  81% (27/33)Unpacking objects:  84% (28/33)Unpacking objects:  87% (29/33)Unpacking objects:  90% (30/33)Unpacking objects:  93% (31/33)Unpacking objects:  96% (32/33)Unpacking objects: 100% (33/33)Unpacking objects: 100% (33/33), done.
