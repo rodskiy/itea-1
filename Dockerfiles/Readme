@@ -1,4 +1,0 @@
-
-Dockerfile - file for build image alpine linux with git and clone repository from github
-test_image - bash script for testing new image
-test.log - log of execution script
