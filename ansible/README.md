@@ -17,10 +17,16 @@
 
 2. Выполнение сценария на localhost
    ansible-playbook /homework/nginx.yml  -i /hosts --connection local
+   
+3. Получение php-info
+   ansible local -m shell -a "php -r 'phpinfo();'" --connection local -i /hosts
 
-3. Проверка удаленных серверов из облака
+4. Проверка удаленных серверов из облака
    ansible AWS -m ping --private-key /ansible_test.pem -i /hosts
 
-4. Получение php-info с удаленных серверов
+5. Выполнение playbook на удаленных серверах
    ansible-playbook /homework/remote_nginx.yml  -i /hosts -l AWS --private-key /ansible_test.pem
+
+6. Получение php-info с удаленных серверов
+   ansible AWS -m shell "php -r 'phpinfo();'" --private-key /ansible_test.pem
 
