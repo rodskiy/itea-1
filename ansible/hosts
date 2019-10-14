@@ -1,0 +1,9 @@
+[local]
+localhost hostname=local.server
+
+[test_remote]
+192.168.0.102
+
+[AWS]
+ec2-54-224-190-70.compute-1.amazonaws.com ansible_user=ec2-user hostname=ec2-54-224-190-70.compute-1.amazonaws.com
+ec2-54-226-63-218.compute-1.amazonaws.com ansible_user=ec2-user hostname=ec2-54-226-63-218.compute-1.amazonaws.com
