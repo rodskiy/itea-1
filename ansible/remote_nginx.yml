@@ -1,0 +1,7 @@
+---
+- hosts: AWS
+  vars:
+   hostname: homework.example
+  roles:
+   - role: nginx
+     become: yes 
