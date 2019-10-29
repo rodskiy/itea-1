@@ -1,0 +1,17 @@
+job('itea-Test') {
+ scm {
+   git {
+   remote {
+           url('https://github.com/rodskiy/itea-1.git')
+           branch("$BRANCH")
+          }
+        }
+     }
+
+ steps {
+    dockerBuildAndPublish {
+        repositoryName('rodskiy/devops_base')
+        registryCredentials("dockerhub-credentials")
+     }
+  }
+}
